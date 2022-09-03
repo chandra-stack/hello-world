@@ -1,17 +1,25 @@
 #name of the workflow file
 
-name: hello world workflow
+name: hello world  and setup node-js env workflow
 
 on:
   [push, pull_request , workflow_dispatch]
 
 jobs:
-  write-hello-world:
+  say-hello-world:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Message
+    - name: Say hello world Message
       run: |
         echo "hello world"
     
-  
+    - uses: actions/setup-node@v3
+      with:
+        node-version : 12.x
+        cache : npm
+    - name : Running npm ci command
+    - run : npm ci
+    - name : Running npm test command 
+    - run : npm test
+        
