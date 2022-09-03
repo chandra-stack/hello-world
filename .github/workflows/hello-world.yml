@@ -17,9 +17,9 @@ jobs:
     - uses: actions/setup-node@v3.4.1
       with:
         node-version : 16
-        #cache : npm
+    
     - name : Running npm ci command
-      run : npm ci
+      run : npm -v
     - name : Running npm test command 
-      run : npm test
+      #run : npm test
         
