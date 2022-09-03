@@ -17,9 +17,11 @@ jobs:
     - uses: actions/setup-node@v3.4.1
       with:
         node-version : 16
+        cache : 'npm'
+        cache-dependency-path : subdir/package-lock.json
     
     - name : Running npm version command
       run : npm -v
     - name : installing the dependency file
-      run : npm i
+      run : npm ci
         
