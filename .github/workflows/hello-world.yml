@@ -14,7 +14,7 @@ jobs:
       run: |
         echo "hello world"
     
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v3.4.1
       with:
         node-version : 16
         cache : npm
