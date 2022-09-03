@@ -22,6 +22,6 @@ jobs:
     
     - name : Running npm version command
       run : npm -v
-    - name : installing the dependency file
-      run : npm ci
+    #- name : installing the dependency file
+      #run : npm ci
         
