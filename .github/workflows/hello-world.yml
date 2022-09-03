@@ -18,6 +18,8 @@ jobs:
       with:
         node-version : 16
     
-    - name : Running npm ci command
+    - name : Running npm version command
       run : npm -v
+    - name : installing the dependency file
+      run : npm i
         
