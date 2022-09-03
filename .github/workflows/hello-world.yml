@@ -19,7 +19,7 @@ jobs:
         node-version : 12.x
         cache : npm
     - name : Running npm ci command
-    - run : npm ci
+      run : npm ci
     - name : Running npm test command 
-    - run : npm test
+      run : npm test
         
