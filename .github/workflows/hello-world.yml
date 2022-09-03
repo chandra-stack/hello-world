@@ -20,6 +20,4 @@ jobs:
     
     - name : Running npm ci command
       run : npm -v
-    - name : Running npm test command 
-      #run : npm test
         
