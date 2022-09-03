@@ -3,11 +3,15 @@
 name: hello world  and setup node-js env workflow
 
 on:
-  [push, pull_request , workflow_dispatch]
+  push:
+    branches : ["master"]
+  pull_request:
+    branches : ["master"]
+  workflow_dispatch : 
 
 jobs:
   say-hello-world:
-    runs-on: [ubuntu-latest , windows-latest]
+    runs-on: [ubuntu-latest]
     steps:
     - uses: actions/checkout@v3
     - name: Say hello world Message
