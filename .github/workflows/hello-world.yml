@@ -16,7 +16,7 @@ jobs:
     
     - uses: actions/setup-node@v3
       with:
-        node-version : 12.x
+        node-version : 16
         cache : npm
     - name : Running npm ci command
       run : npm ci
