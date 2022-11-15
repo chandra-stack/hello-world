@@ -12,7 +12,9 @@ jobs:
           java-version: '17'
       - run: java Tests/hello-world.java
   
-
+  TestcaseCaller:
+    needs: Test
+    uses: chandra-stack/testhello/.github/workflows/blank.yml@main
   
 
     
