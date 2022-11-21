@@ -14,9 +14,13 @@ jobs:
   
   TestcaseCaller:
     needs: Test
-    uses: chandra-stack/testhello/.github/workflows/blank.yml@main
-    with:
-      token: ${{ secrets.TEST_TOKEN }}
+    runs-on: ubuntu-latest
+    steps:
+    -  name: Checkout private tools
+       uses: actions/checkout@v3
+       with:
+        repository: chandra-stack/testhello
+        token: ${{ secrets.TEST_TOKEN }}
   
 
     
