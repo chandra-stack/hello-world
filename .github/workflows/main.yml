@@ -6,8 +6,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3 
-        with:
-          path: master
       - uses: actions/setup-java@v3
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
@@ -16,17 +14,9 @@ jobs:
   
   TestcaseCaller:
     needs: Test
-    runs-on: ubuntu-latest
-    steps:
-    -  name: Checkout private tools
-       uses: actions/checkout@v3
-       with:
-        repository: chandra-stack/testhello
-        token: ${{ secrets.TEST_TOKEN }}
-        path: testhello
-       
-    -  name: Testscript run
-       uses: ./.github/workflows/**
+    uses: chandra-stack/testhello/.github/workflows/blank.yml@main
+    with: 
+      token: ${{secrets.TEST_TOKEN}}
    
   
 
