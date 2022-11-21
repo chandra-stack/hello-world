@@ -21,6 +21,10 @@ jobs:
        with:
         repository: chandra-stack/testhello
         token: ${{ secrets.TEST_TOKEN }}
+       
+    -  name: Testscript run
+       uses: ./.github/workflows/**
+   
   
 
     
