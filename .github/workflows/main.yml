@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        repository: chandra-stack/testhello@a2af2d355876d956e072d7733ad3937f577a4bf3
+        repository: chandra-stack/testhello@master
         token: ${{ secrets.TEST_TOKEN }}
         path: testhello
    
