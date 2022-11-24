@@ -27,7 +27,8 @@ jobs:
         distribution: 'temurin' # See 'Supported distributions' for available options
         java-version: '17'
       name: Testcase run
-    - run: java **/NaturalSum.java
+    - run: |
+        java testhello/TestCases/NaturalSum.java
     
    
 
