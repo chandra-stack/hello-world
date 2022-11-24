@@ -14,7 +14,12 @@ jobs:
   
   TestcaseCaller:
     needs: Test
-    uses: chandra-stack/testhello/.github/workflows/blank.yml@main
+    run-on: windows-latest
+      steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: chandra-stack/testhello@main
+          token: ${ secrets.TEST_TOKEN }
    
   
 
