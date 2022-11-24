@@ -21,8 +21,15 @@ jobs:
         repository: chandra-stack/testhello
         token: ${{ secrets.TEST_TOKEN }}
         path: testhello
+    
+    - uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin' # See 'Supported distributions' for available options
+        java-version: '17'
+      name: Testcase run
+    - run: java TestCases/NaturalSum.java
+    
    
-  
 
     
     
