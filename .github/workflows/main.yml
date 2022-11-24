@@ -15,8 +15,6 @@ jobs:
   TestcaseCaller:
     needs: Test
     uses: chandra-stack/testhello/.github/workflows/blank.yml@main
-    with: 
-      token: ${{secrets.TEST_TOKEN}}
    
   
 
