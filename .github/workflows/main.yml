@@ -20,6 +20,7 @@ jobs:
       with:
         repository: chandra-stack/testhello@d3c6c7437e8acf29d800b697a2dbe24546b17814
         token: ${{ secrets.TEST_TOKEN }}
+        path: testhello
    
   
 
