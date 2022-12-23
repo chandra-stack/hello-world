@@ -1,0 +1,11 @@
+name: Test chrome
+
+on:
+  workflow_dispatch:
+
+jobs:
+  testchrome:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        sudo apt install google-chrome-stable
