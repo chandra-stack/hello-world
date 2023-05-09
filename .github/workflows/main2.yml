@@ -7,4 +7,6 @@ jobs:
   testchrome:
     runs-on: windows-latest
     steps:
-    - run: echo ${{chandru}}
+    - run: |
+        echo "chandru"
+        echo $chandru
