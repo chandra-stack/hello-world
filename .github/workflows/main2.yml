@@ -8,5 +8,4 @@ jobs:
     runs-on: windows-latest
     steps:
     - run: |
-        echo "chandru"
         echo $chandru
